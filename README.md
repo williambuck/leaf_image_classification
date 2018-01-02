@@ -38,17 +38,5 @@ The dataset consists of 1,584 images of leaf specimens (16 samples each of 99 sp
 1. **data** - Numerical attribute data, training and test sets (see Data Description above)
 1. **images** - Includes all of the black and white leaf images
 
-## Metrics
-In this report, a combination of Log Loss and accuracy scores will be displayed. Since the classes are balanced and each class represents ~1% of the data, the accuracy measure will be an acceptable measure of model preformace and is quickly interpretible in terms of knowing how many correct predictions were made, but Log Loss will ultimately be the loss function I'm trying to minimize since it penalizes the score for false predictions, or less than certain predictions. See the function below.
-
-$$
-\textit{logloss} = -\frac1N\sum_{i=1}^{N}\sum_{j=1}^{M}{{y}_{i,j}\log({p}_{i,j})}
-$$
-
-N = the number of samples or instances
-<br>M = the number of possible labels 
-<br>${y}_{i,j}$ = a binary indicator of whether or not label *j* is the correct classification for instance *i*
-<br>${p}_{i,j}$ = the model probability of assigning label *j* to instance *i*
-
->Log-loss is a “soft” measurement of accuracy that incorporates the idea of probabilistic confidence. It is intimately tied to information theory: log-loss is the cross entropy between the distribution of the true labels and the predictions. Intuitively speaking, entropy measures the unpredictability of something. Cross entropy incorporate the entropy of the true distribution, plus the extra unpredictability when one assumes a different distribution than the true distribution. So log-loss is an information-theoretic measure to gauge the “extra noise” that comes from using a predictor as opposed to the true labels. By minimizing the cross entropy, one maximizes the accuracy of the classifier.
-><br>-- From: https://www.quora.com/What-is-an-intuitive-explanation-for-the-log-loss-function
+## Results:
+The final CNN model resulted in a Log Loss score of 0.07351101370107743 with 99.6% accuracy when predicting the species of tree from which the leaf originated.
