@@ -30,6 +30,14 @@ The dataset consists of 1,584 images of leaf specimens (16 samples each of 99 sp
 <br>shape_1, shape_2, shape_3, ..., shape_64 - each of the 64 attribute vectors for the shape feature
 <br>texture_1, texture_2, texture_3, ..., texture_64 - each of the 64 attribute vectors for the texture feature
 
+## Files in this repository:
+1. **Kaggle_Leaf_Classification-Technical_Presentation.ipynb** - Includes the full analysis of the dataset
+1. **bestbenchmarkmodel.h5** - CNN that was used as a benchmark
+1. **bestmodel.h5** - CNN that provided the best validation score
+1. **model.png** - Architecture of final CNN model
+1. **data** - Numerical attribute data, training and test sets (see Data Description above)
+1. **images** - Includes all of the black and white leaf images
+
 ## Metrics
 In this report, a combination of Log Loss and accuracy scores will be displayed. Since the classes are balanced and each class represents ~1% of the data, the accuracy measure will be an acceptable measure of model preformace and is quickly interpretible in terms of knowing how many correct predictions were made, but Log Loss will ultimately be the loss function I'm trying to minimize since it penalizes the score for false predictions, or less than certain predictions. See the function below.
 
