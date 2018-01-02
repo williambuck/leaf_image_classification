@@ -9,7 +9,7 @@ Species identification presents many issues since it is a subjective grouping ba
 
 While physical appearance is only one attribute of species identification, it is something that can be improved upon by using computers since human error can be minimized. A more accurate image classification model could have a big impact on the many companies and organizations that rely on the environment.
 
-The following analysis on the Kaggle Leaf Classisfication datasets will demonstrate the predictive power of Machine Learning models, as well as a Convolutional Nueral Net, on the provided leaf images to identify the species of tree that the leaf originated from.
+The analysis in this repository of the Kaggle Leaf Classisfication datasets will demonstrate the predictive power of Machine Learning models, as well as a Convolutional Nueral Net, on the provided leaf images to identify the species of tree that the leaf originated from.
 
 
 ## Data Description
@@ -39,4 +39,4 @@ The dataset consists of 1,584 images of leaf specimens (16 samples each of 99 sp
 1. **images** - Includes all of the black and white leaf images
 
 ## Results:
-The final CNN model resulted in a Log Loss score of 0.07351101370107743 with 99.6% accuracy when predicting the species of tree from which the leaf originated.
+The final CNN model resulted in a Log Loss score of 0.07351101370107743 with 99.60% accuracy when predicting the species of tree from which the leaf originated.
